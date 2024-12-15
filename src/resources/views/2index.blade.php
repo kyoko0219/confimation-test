@@ -6,7 +6,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>ConfirmationTest</title>
-    <link rel="stylesheet" href="{{ asset('css/sanitize.css') }}" />
+    <link rel="stylesheet" href="{{ asset('css/sanitize.css') }}"/>
     <link rel="stylesheet" href="{{ asset('css/index.css') }}" />
 </head>
 
@@ -60,6 +60,10 @@
         <tr>
             <th class="category"><label>お問い合わせの種類</label></th>
             <td class="required">※</td>
+            <style>
+                select:invalid { color: #808080; }
+                select option { color: black; }
+            </style>
             <td><select name="categories" required>
                     <option value="">選択してください</option>
                     <option value="1">商品のお届けについて</option>
